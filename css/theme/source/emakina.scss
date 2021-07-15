@@ -10,6 +10,19 @@
 @import "../template/settings";
 // ---------------------------------------------
 
+//emakina fonts
+//@import url(./fonts/emakina/fontleague-gothic.css);
+@import url(./fonts/emakina/MuseoSans100Italic/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans100Regular/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans300Italic/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans300Regular/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans500Italic/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans500Regular/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans700Italic/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans700Regular/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans900Italic/stylesheet.css);
+@import url(./fonts/emakina/MuseoSans900Regular/stylesheet.css);
+
 //emakina colors
 $tangerine: #ff7f41; //orange
 $black: #000000;
@@ -31,8 +44,8 @@ $mainColor: $grey1;
 $headingColor: $tangerine;
 
 $mainFontSize: 42px;
-$mainFont: 'Noto Sans JP', sans-serif;
-$headingFont: 'Noto Sans JP', sans-serif;
+$mainFont: 'museo_sans500';
+$headingFont: 'museo_sans500';
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
