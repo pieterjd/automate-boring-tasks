@@ -12,6 +12,16 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <script src="js/fontawesome/all.min.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -21,6 +31,8 @@
                  data-separator-vertical="^\n\n"
                  data-separator-notes="^Note:"
                  data-charset="iso-8859-15">
+          <script type="text/template">
+          </script>
             <!--
                 Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
                 For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
