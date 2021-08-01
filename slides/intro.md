@@ -1,24 +1,19 @@
-# Automate boring tasks <!-- .element: style="text-align: left" -->
-### Save times <!-- .element: style="text-align: left" -->
-##### and learn something new <!-- .element: style="text-align: left" -->
-some info on example 1
+# Automate, Save & Learn
+#### Pieter-Jan Drouillon
+
+<a href="https://www.github.com/pieterjd"><i class="fab fa-github"></i></a> <a href="https://www.pieterjd.be"><i class="fab fa-chrome"></i></a>
+<a href="https://www.linkedin.com/in/pieterjandrouillon/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.emakina.com"><i class="fas fa-briefcase"></i></a>
 
 
 
 
-# Professional
-<ul style="list-style-type: none">
+# About Me ...
+<ul style="list-style-type: none; text-align: left">
     <li><i class="fas fa-graduation-cap"></i> Academic background</li>
     <li><i class="fas fa-link"></i> Short-lived career in Supply Chain</li>
-    <li><i class="fab fa-java"></i> Full-stack developer @ <span class="fragment fade-out" >Design Is Dead</span><span class="fragment">Emakina.BE</span></li>
+    <li><i class="fab fa-java"></i> Full-stack Java/AEM developer @ <del>Design Is Dead</del> emakina.BE</li>
 </ul>
 
 
-
-# Intro 2
-```js [|1-2|3|4]
-    let a = 1;
-    let b = 2;
-    let c = x => 1 + 2 + x;
-    c(3);
-```
+## About emakina.BE
+wait for marketing team
