@@ -66,3 +66,9 @@ $heading4Size: 1.0em;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+//custom style, eg allow long lines in codeblocks
+.reveal .code-wrapper {
+	white-space: normal; //copied from ../template/theme
+  width: max-content; //customization
+}

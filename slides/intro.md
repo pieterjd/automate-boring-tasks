@@ -1,8 +1,10 @@
 # Automate, Save & Learn
 #### Pieter-Jan Drouillon
 
+<div style="display: flex; justify-content: space-evenly;">
 <a href="https://www.github.com/pieterjd"><i class="fab fa-github"></i></a> <a href="https://www.pieterjd.be"><i class="fab fa-chrome"></i></a>
 <a href="https://www.linkedin.com/in/pieterjandrouillon/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.emakina.com"><i class="fas fa-briefcase"></i></a>
+</div>
 
 
 
