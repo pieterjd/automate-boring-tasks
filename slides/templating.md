@@ -56,7 +56,7 @@ _cq_dialog:
 ```
 
 
-## AEM - component xml
+### component xml
 ```xml[6-8]
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root
@@ -70,7 +70,7 @@ _cq_dialog:
 ```
 
 
-## AEM - dialog xml
+### dialog xml
 ```xml[|28|13-17]
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0">
@@ -103,9 +103,9 @@ _cq_dialog:
 ```
 
 
-## AEM - YEOMAN
+### YEOMAN
 ![alt text](../assets/yeoman.png "Yeoman")
 
 
-## AEM - GENERATE Component
+### YEOMAN COMPONENT GENERATION
 ![alt text](../assets/yeoman-console.png "console")
