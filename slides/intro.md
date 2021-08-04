@@ -13,7 +13,7 @@
 <ul style="list-style-type: none; text-align: left">
     <li><i class="fas fa-graduation-cap"></i> Academic background</li>
     <li><i class="fas fa-link"></i> Short-lived career in Supply Chain</li>
-    <li><i class="fab fa-java"></i> Full-stack Java/AEM developer @ <del>Design Is Dead</del> emakina.BE</li>
+    <li><i class="fab fa-java"></i> Full-stack Java/AEM developer @ <span class="fragment strike" data-fragment-index="1">Design Is Dead</span> <span class="fragment " data-fragment-index="1">emakina.BE</span></li>
 </ul>
 
 
