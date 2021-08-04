@@ -6,7 +6,7 @@
 
 
 ### jQuery - load & init
-```js
+```js[|1-5|6-14]
 //load in jquery
 var jq = document.createElement('script');
 jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
@@ -18,7 +18,6 @@ daysInMonth=new Date(now.getFullYear(), now.getMonth()+1, 0).getDate();
 //create array of all days in current month
 var daysOfMonth = [];
 for (var day = 1; day <= daysInMonth; day++) {
-    //month is zero base in the constructor
     var date = new Date(now.getFullYear(),now.getMonth(),day);
     daysOfMonth.push(date);
 }
@@ -26,9 +25,10 @@ for (var day = 1; day <= daysInMonth; day++) {
 
 
 ### jQuery - fill out
-```js
+```js[|4-8]
 for(var i=0;i<daysOfMonth.length;i++){
  var date = daysOfMonth[i];
+ //not working in the weekend :)
  if(date.getDay()!=0 && date.getDay()!=6 ){
   jQuery(jQuery('[name$="it1"]')[i]).val(8);//hours
   jQuery(jQuery('[name*="projectFullNameId"]')[i]).val('OIKOI');
