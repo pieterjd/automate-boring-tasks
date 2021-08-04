@@ -19,7 +19,7 @@ values('{0}@emakina.com', sha1('pass'), 1, now(), now() );
 
 insert into user_credential
 (user_id,credential,value,created_at,updated_at)
-values (LAST_INSERT_ID(),'admin',1,now(),now());
+values (LAST_INSERT_ID(),'{0}',1,now(),now());
 "@
 
 @('admin','press','super-admin','mice','spot')
