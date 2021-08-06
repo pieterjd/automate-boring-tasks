@@ -11,7 +11,7 @@ http "Authentication: Bearer $TOKEN" http://www.example.com
 
 
 ## Scripting - Powershell
-```ps[|1-9|11-12]
+```ps[|1-9|4,8|11-12]
 $sql_template = @"
 insert into `user`
 (email, password, is_active, created_at, updated_at)
@@ -28,7 +28,7 @@ values (LAST_INSERT_ID(),'{0}',1,now(),now());
 
 
 ## Scripting - SQL
-```sql[1-7|9-14]
+```sql[|1-7|9-14]
 SELECT distinct uc.credential as c,
 CONCAT("insert into `user` ( email, password,
 is_active, created_at, updated_at)
