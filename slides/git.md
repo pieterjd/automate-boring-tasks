@@ -15,6 +15,7 @@ git log "<githash>..HEAD" --format=format:"%s"
 ```
 1. filter for story ids
 1. fetch story description from JIRA
+1. ``pbcopy``
 
 
 ## Clean up Environment
