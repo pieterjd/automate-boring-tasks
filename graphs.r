@@ -6,19 +6,23 @@ chartreuse<- "#8cc63f" #green
 azure<- "#008fd4" #blue
 colors <- c(tangerine, chartreuse)
 
-names<-c("timesheet","deployment updates","templating")
-annoyance<-c(10, 5,4)
-frequency<- c(4,9,4)
+names<-c("timesheet","deployment updates","templating","fake")
+tediousness<-c(10, 5,4,10)
+frequency<- c(4,9,4,10)
 
 
-data <-data.frame(names, frequency, annoyance)
-data$radius<-data$frequency + 2* data$annoyance
-data$color<-data$radius
+data <-data.frame(names, frequency, tediousness)
+data$annoyance<-data$frequency + 2* data$tediousness
 
 
-p<-ggplot(data, aes(x=frequency,y=annoyance)) + 
-   geom_point(aes(color=color), size = 4) +
+
+p<-ggplot(data, aes(x=frequency,y=tediousness)) +
+   geom_point(aes(color=annoyance), size = 4) +
    geom_text(aes(label=names),hjust="inward",vjust=2) +
-   xlim(0,NA) + ylim(0,NA) + # make sure origin is in plot
-   scale_colour_gradient(low=chartreuse, high=tangerine)
+   scale_colour_gradient(low=chartreuse, high=tangerine) + # color coding of points
+   xlab('Frequency') + ylab('Tediousness') + # Axis labels
+   # lim is the range of the x-axis, breaks defines which ticks to display, and labels are the labels of the ticks
+   scale_x_continuous(lim=c(0,max(data$frequency)), breaks=c(0, max(data$frequency)), labels=c('Low', 'High')) +
+   # same as for x-axis :)
+   scale_y_continuous(lim=c(0,max(data$tediousness)), breaks=c(0, max(data$tediousness)), labels=c('Low', 'High'))
 p
