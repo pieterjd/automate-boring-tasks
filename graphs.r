@@ -2,7 +2,9 @@ library(ggplot2)
 
 # emakina colors
 tangerine<-"#ff7f41" #orange
+tangerine_transparent<-"#ff7f4185"
 chartreuse<- "#8cc63f" #green
+chartreuse_transparent<- "#8cc63f85"
 azure<- "#008fd4" #blue
 colors <- c(tangerine, chartreuse)
 
@@ -25,4 +27,6 @@ p<-ggplot(data, aes(x=frequency,y=tediousness)) +
    scale_x_continuous(lim=c(0,max(data$frequency)), breaks=c(0, max(data$frequency)), labels=c('Low', 'High')) +
    # same as for x-axis :)
    scale_y_continuous(lim=c(0,max(data$tediousness)), breaks=c(0, max(data$tediousness)), labels=c('Low', 'High'))
+
 p
+ggsave("./assets/scatterplot.png", p, bg = "transparent")
