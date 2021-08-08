@@ -76,6 +76,9 @@ $heading4Size: 1.0em;
 //no bullets in unordered list
 .reveal ul {
   list-style-type: none;
+  li:not(:last-child){
+     margin-bottom: 1em;
+  }
 }
 
 .reveal ul ul {
