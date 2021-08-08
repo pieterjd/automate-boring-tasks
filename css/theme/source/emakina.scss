@@ -50,7 +50,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: $azure;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -71,4 +71,13 @@ $heading4Size: 1.0em;
 .reveal .code-wrapper {
 	white-space: normal; //copied from ../template/theme
   width: max-content; //customization
+}
+
+//no bullets in unordered list
+.reveal ul {
+  list-style-type: none;
+}
+
+.reveal ul ul {
+	list-style-type: none;
 }

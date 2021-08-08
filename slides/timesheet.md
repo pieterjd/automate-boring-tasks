@@ -52,3 +52,10 @@ AND worklogDate>=startOfMonth()&fields=id,key
 ### Python + selenium
 1. read JSON
 1. Simulate manual entry
+
+
+## References
+* jQuery: [Website](https://jquery.com/)
+* Jira: [Getting started with JQL](https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14) - [Advanced Search with JQL](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
+* Python: [W3School Python Tutorial](https://www.w3schools.com/python/default.asp) - [Reading JSON](https://docs.python.org/3/library/json.html)
+* Selenium: [Selenium with Python](https://selenium-python.readthedocs.io/)
