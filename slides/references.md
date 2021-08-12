@@ -21,3 +21,9 @@
 * [Git Log command](https://git-scm.com/docs/git-log)
 * [Getting started with JQL](https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14) - [Advanced Search with JQL](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
 * [Git Branch command](https://git-scm.com/docs/git-branch)
+
+
+## GITHUB Pages & Actions
+* [Github Pages](https://pages.github.com/)
+* [Hugo](https://gohugo.io/)
+* [Github Actions](https://github.com/features/actions) - [Github Actions Docs](https://docs.github.com/en/actions)
