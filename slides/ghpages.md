@@ -13,9 +13,13 @@
 
 
 ## Deploy script
-1. Commit changes to hugo repository
+1. Commit & push changes to hugo repository
 1. Run hugo
 1. Commit & push changes to ``<username>.github.io``
+Note:
+* Always forget to push all commit changes
+* Github Actions - github's pipelines
+* Some investigation required but actions available for building hugo websites and pushing to github pages
 
 
 ## Github Actions

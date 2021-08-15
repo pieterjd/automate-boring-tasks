@@ -8,6 +8,10 @@ http 'Authentication: Bearer 123456789...XYZ' http: //www.example.com
 export TOKEN=123456789...XYZ
 http "Authentication: Bearer $TOKEN" http://www.example.com
 ```
+Note:
+* Investigating API, investigating, writing down calls in my notebook
+* Token expires everyday, have to update my notes constantly
+* Solution: use env variables for token, use this variable in api calls, when new token - just update environment variable
 
 
 ## Scripting - Powershell
@@ -25,6 +29,10 @@ values (LAST_INSERT_ID(),'{0}',1,now(),now());
 @('admin','press','super-admin','mice','spot')
   |%{$sql_template -f $_}
 ```
+Note:
+* Other example: creating users for each security role
+* quite some roles
+* you would think this would be ok for each environment
 
 
 ## Scripting - SQL
@@ -45,7 +53,9 @@ as command
 from user_credential uc
 order by c;
 ```
-
+Note:
+* Off course - each environment has it specific set of roles
+* generate same sql statements, but this time using sql itself
 
 ## AEM - component
 ```bash
@@ -54,6 +64,16 @@ byline.html
 _cq_dialog:
            .content.xml
 ```
+Note:
+* Previous examples are one-offs; this one is a recurring issue
+* AEM component generates HTML, for instance a byline/subtitle
+* Component is stored in folder, same name as component
+* Component has a properties file, containing name, some tags, other information --> .content.xml
+* Component has a 'render script', containing the HTML to generate --> componentName.html
+* Component has configuration dialog _cq_dialog\.content.xml
+
+* AEM component has following conventions
+
 
 
 ### component xml
@@ -101,11 +121,20 @@ _cq_dialog:
  </content>
 </jcr:root>
 ```
+Note:
+* A lot of code has been thrown out
+* Common practice: copy exiting component, update information
+* Error prone -> PR remarks
 
 
 ### YEOMAN
 ![alt text](../assets/yeoman.png "Yeoman")
+Note:
+* I remember this from working with JHipster
 
 
 ### YEOMAN COMPONENT GENERATION
 ![alt text](../assets/yeoman-console.png "console")
+Note:
+* Prompted for essential information
+* No more PR remarks stating 'forgot to update this'

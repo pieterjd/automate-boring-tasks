@@ -5,6 +5,12 @@
 <a href="https://www.github.com/pieterjd"><i class="fab fa-github"></i></a> <a href="https://www.pieterjd.be"><i class="fab fa-chrome"></i></a>
 <a href="https://www.linkedin.com/in/pieterjandrouillon/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.emakina.com"><i class="fas fa-briefcase"></i></a>
 </div>
+Note:
+* Welcome to Automate Boring tasks, Save time and learn something new.
+* Ideal talk so late on the day
+* I'm talking about my journey on how I try to make my professional life easier
+* It's not technical, not difficult, but I haven't read posts or seen talks before tackling this issue
+* overview
 
 
 

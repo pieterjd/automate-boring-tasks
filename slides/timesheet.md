@@ -1,8 +1,15 @@
 # Timesheeting
+Note:
+* By show of hands, who likes filling out timesheets? who hates it? Welcome to the dark side :)
 
 
 ## Fusion
 ![alt text](../assets/fusion_zoom.png "Fusion")
+Note:
+* Really old dud
+* Urban legends: only 2 installs of this exotic beta version
+* Even oracle stays away from it
+* UI / UX really outdated
 
 
 ### jQuery - load & init
@@ -22,6 +29,8 @@ for (var day = 1; day <= daysInMonth; day++) {
     daysOfMonth.push(date);
 }
 ```
+Note:
+* several people came up with same Idea - jQuery
 
 
 ### jQuery - fill out
@@ -37,6 +46,10 @@ for(var i=0;i<daysOfMonth.length;i++){
  }
 }
 ```
+Note:
+* Fill out text fields
+* some people overbooked a project, things didn't add up
+* Management intervened: Book your time in jira as well to ease double-checking
 
 
 ### JQL + Powershell
@@ -47,8 +60,14 @@ AND worklogDate>=startOfMonth()&fields=id,key
   ```
 1. enrich data
 1. dump in JSON
+Note:
+* Only book in Jira as usually work on same project for an entire month
+* fetch info from Jira
+* enrich with po reference, project name, hours worked, ....
 
 
 ### Python + selenium
 1. read JSON
 1. Simulate manual entry
+Note:
+* Manual actions are coded, now with Selenium for input (jQuery cannot read local files without setting up webserver)
