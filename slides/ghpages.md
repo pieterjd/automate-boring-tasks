@@ -12,7 +12,7 @@
 * Generates all HTML & CSS
 
 
-## Deploy script
+### Deploy script
 1. Commit & push changes to hugo repository
 1. Run hugo
 1. Commit & push changes to ``<username>.github.io``
@@ -22,7 +22,7 @@ Note:
 * Some investigation required but actions available for building hugo websites and pushing to github pages
 
 
-## Github Actions
+### Github Actions
 ```yaml[|2-4|10-14|15-16|17-28]
 name: Build and Deploy
 on:
@@ -55,9 +55,9 @@ jobs:
 ```
 
 
-## Runs
+### Runs
 ![alt text](../assets/gh-actions.png "console")
 
 
-## Website commits
+### Website commits
 ![alt text](../assets/blog-commits.png "console")

@@ -34,7 +34,7 @@ Note:
 
 
 ## Clean up Environment
-add image
+![Example deploy message](../assets/intellij-branches-zoom.png "Example deploy message")<!-- .element height="70%" width="70%" -->
 
 
 ### list branches

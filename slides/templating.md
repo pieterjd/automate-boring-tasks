@@ -57,6 +57,7 @@ Note:
 * Off course - each environment has it specific set of roles
 * generate same sql statements, but this time using sql itself
 
+
 ## AEM - component
 ```bash
 .content.xml
@@ -73,7 +74,6 @@ Note:
 * Component has configuration dialog _cq_dialog\.content.xml
 
 * AEM component has following conventions
-
 
 
 ### component xml
