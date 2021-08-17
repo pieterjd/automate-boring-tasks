@@ -76,6 +76,8 @@ $heading4Size: 1.0em;
 //no bullets in unordered list
 .reveal ul {
   list-style-type: none;
+  text-align: left;
+  width: inherit;
   li:not(:last-child){
      margin-bottom: 1em;
   }
@@ -83,6 +85,7 @@ $heading4Size: 1.0em;
 
 .reveal ul ul {
 	list-style-type: none;
+  text-align: left;
 }
 
 .title-top-align{
