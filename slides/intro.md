@@ -21,3 +21,7 @@ Note:
 
 <!-- .slide: data-background-image="../assets/emakina.png" data-background-size="contain" class="title-top-align"-->
 ## About Emakina<!-- .element: style="top: 0 !important;"  -->
+
+
+<!-- .slide: data-background-image="../assets/emakina-clients.png" data-background-size="contain" class="title-top-align"-->
+## About Emakina's Clients<!-- .element: style="top: 0 !important;"  -->
