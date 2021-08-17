@@ -78,4 +78,4 @@ Note:
 * Brushed up on Python
 * Learned Jira QL & Selenium
 
-* Lot's of time & frustration
+* Lot's of time & frustration <!-- .element: class="fragment" data-fragment-index="1"  -->

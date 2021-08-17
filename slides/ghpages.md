@@ -67,4 +67,4 @@ jobs:
 * Bash scripting
 * Github Actions
 
-* Lot's of time & frustration
+* Lot's of time & frustration <!-- .element: class="fragment" data-fragment-index="1"  -->

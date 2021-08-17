@@ -145,4 +145,4 @@ Note:
 * Some exotic MySQL functions
 * First experience with node.js
 
-* Lot's of time & frustration
+* Lot's of time & frustration <!-- .element: class="fragment" data-fragment-index="1"  -->
