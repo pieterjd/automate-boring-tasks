@@ -138,3 +138,11 @@ Note:
 Note:
 * Prompted for essential information
 * No more PR remarks stating 'forgot to update this'
+
+
+## What I've learned & saved
+* Brushed up on Bash & Powershell
+* Some exotic MySQL functions
+* First experience with node.js
+
+* Lot's of time & frustration

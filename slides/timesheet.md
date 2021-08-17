@@ -71,3 +71,11 @@ Note:
 1. Simulate manual entry
 Note:
 * Manual actions are coded, now with Selenium for input (jQuery cannot read local files without setting up webserver)
+
+
+## What I've learned & saved
+* Refreshed jQuery
+* Brushed up on Python
+* Learned Jira QL & Selenium
+
+* Lot's of time & frustration

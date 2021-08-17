@@ -61,3 +61,10 @@ jobs:
 
 ### Website commits
 ![alt text](../assets/blog-commits.png "console")
+
+
+## What I've learned & saved
+* Bash scripting
+* Github Actions
+
+* Lot's of time & frustration

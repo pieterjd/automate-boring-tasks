@@ -67,3 +67,11 @@ else{
  write-host -ForegroundColor Red "No git repo detected"
 }
 ```
+
+
+## What I've learned & saved
+* Brushed up on Git command & Powershell
+* Jira QL
+* ``pbcopy``
+
+* Lot's of time & frustration
