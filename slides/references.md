@@ -1,6 +1,10 @@
 # References
 
 
+## Toastmasters in Poland
+Bialystok (1), Bydgoszcz (1), Czestochowa (1), Gdansk (2), Katowice (1), Krakow (3), Lodz (1), Lublin (1), Poznan (2), Sopot (1), Torun (1), Warsaw (3), Wroclaw (3)
+
+
 ## Timesheeting
 * [Jquery](https://jquery.com/)
 * [Getting started with JQL](https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14) - [Advanced Search with JQL](https://support.atlassian.com/jira-service-management-cloud/docs/use-advanced-search-with-jira-query-language-jql/)
