@@ -33,7 +33,7 @@ Note:
 ![Example deploy message](../assets/deploy_message.png "Example deploy message")
 
 
-## Clean up Environment
+## Environment Clean up
 ![Example deploy message](../assets/intellij-branches-zoom.png "Example deploy message")<!-- .element height="70%" width="70%" -->
 
 
