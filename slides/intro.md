@@ -1,10 +1,8 @@
 # Automate, Save & Learn
 #### Pieter-Jan Drouillon
 
-<div style="display: flex; justify-content: space-evenly;">
-<a href="https://www.github.com/pieterjd"><i class="fab fa-github"></i></a> <a href="https://www.pieterjd.be"><i class="fab fa-chrome"></i></a>
-<a href="https://www.linkedin.com/in/pieterjandrouillon/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.emakina.com"><i class="fas fa-briefcase"></i></a>
-</div>
+<i class="fab fa-chrome"></i> www.pieterjd.be
+
 Note:
 * Welcome to Automate Boring tasks, Save time and learn something new.
 * Ideal talk so late on the day
@@ -13,9 +11,7 @@ Note:
 * overview
 
 
-
-
-# About Me ...
+## About Me ...
 <ul style="list-style-type: none; text-align: left">
     <li><i class="fas fa-graduation-cap"></i> Academic background</li>
     <li><i class="fas fa-link"></i> Short-lived career in Supply Chain</li>
@@ -23,5 +19,5 @@ Note:
 </ul>
 
 
-## About emakina.BE
-wait for marketing team
+<!-- .slide: data-background-image="../assets/emakina.png" data-background-size="contain" class="title-top-align"-->
+## About Emakina<!-- .element: style="top: 0 !important;"  -->
