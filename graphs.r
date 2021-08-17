@@ -18,8 +18,7 @@ frequency<- c(4,9,4,10)
 
 
 data <-data.frame(names, frequency, tediousness)
-data$annoyance<-data$frequency + 2* data$tediousness
-
+data$annoyance<-data$frequency + data$tediousness
 
 
 p<-ggplot(data, aes(x=frequency,y=tediousness)) +
@@ -56,5 +55,12 @@ text=element_text(size=16),
   ,axis.title.y = element_text( color=grey3)
   #,plot.margin=grid::unit(c(0,0,0,0), "mm")
   )
+
+# add rectangles to highlight the interesting areas
+p<-p +
+  # horizontal bar
+  annotate("rect",xmin=0,xmax=max(data$frequency),ymax=max(data$tediousness),ymin=0.8*max(data$tediousness),alpha=0.2,fill=tangerine)+
+  # vertical bar
+  annotate("rect",xmin=(1-0.2)*max(data$frequency),xmax=max(data$frequency),ymax=max(data$tediousness),ymin=0,alpha=0.2,fill=tangerine)
 p
 ggsave("./assets/scatterplot.png", p)
