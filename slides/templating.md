@@ -11,7 +11,7 @@ http "Authentication: Bearer $TOKEN" http://www.example.com
 Note:
 * Investigating API, investigating, writing down calls in my notebook
 * Token expires everyday, have to update my notes constantly
-* Solution: use env variables for token, use this variable in api calls, when new token - just update environment variable
+* CLICK - Solution: use env variables for token, use this variable in api calls, when new token - just update environment variable
 
 
 ## Scripting - Powershell
@@ -32,6 +32,9 @@ values (LAST_INSERT_ID(),'{0}',1,now(),now());
 Note:
 * Other example: creating users for each security role
 * quite some roles
+* CLICK - string template
+* CLICK - placeholder
+* CLICK - loop over values being used as value for the placeholder
 * you would think this would be ok for each environment
 
 
@@ -56,6 +59,8 @@ order by c;
 Note:
 * Off course - each environment has it specific set of roles
 * generate same sql statements, but this time using sql itself
+* CLICK - first query - create user
+* CLICK - second query - link user to role
 
 
 ## AEM - component
@@ -123,6 +128,8 @@ Note:
 ```
 Note:
 * A lot of code has been thrown out
+* CLICK - still a lot of lines
+* CLICK - the useful lines --> 4/28 = 14% useful lines
 * Common practice: copy exiting component, update information
 * Error prone -> PR remarks
 

@@ -53,6 +53,11 @@ jobs:
           full_commit_message:
              "${{ github.event.head_commit.message }} :rocket:"
 ```
+Note:
+* CLICK - when is pipeline triggered
+* CLICK - setup: checkout the hugo repo and install hugo
+* CLICK - generate the website
+* CLICK - push to github pages repository
 
 
 ### Runs

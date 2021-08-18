@@ -31,6 +31,8 @@ for (var day = 1; day <= daysInMonth; day++) {
 ```
 Note:
 * several people came up with same Idea - jQuery
+* CLICK - loading
+* CLICK - create array of days of the current month
 
 
 ### jQuery - fill out
@@ -47,7 +49,7 @@ for(var i=0;i<daysOfMonth.length;i++){
 }
 ```
 Note:
-* Fill out text fields
+* CLICK - Fill out text fields using selectors
 * some people overbooked a project, things didn't add up
 * Management intervened: Book your time in jira as well to ease double-checking
 
