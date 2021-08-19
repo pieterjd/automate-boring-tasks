@@ -5,18 +5,22 @@
 
 Note:
 * Welcome to Automate Boring tasks, Save time and learn something new.
-* Ideal talk so late on the day
+* By show of hands: who still has to fill out timesheet for today?
+* My name is ....
+  * academic backgrounds
+  * shortlifed career in Supply Chain
+  * Full-stack java/AEM developer at emakina.com
+* Ideal talk so late on the day - all technical details on my website, with references to docs
 * I'm talking about my journey on how I try to make my professional life easier
-* It's not technical, not difficult, but I haven't read posts or seen talks before tackling this issue
-* overview
+* Not an usual developer talk, but I haven't read posts or seen talks before tackling this issue
 
 
-## About Me ...
-<ul style="list-style-type: none; text-align: left">
-    <li><i class="fas fa-graduation-cap"></i> Academic background</li>
-    <li><i class="fas fa-link"></i> Short-lived career in Supply Chain</li>
-    <li><i class="fab fa-java"></i> Full-stack Java/AEM developer @ <span class="fragment strike" data-fragment-index="1">Design Is Dead</span> <span class="fragment " data-fragment-index="1">emakina.BE</span></li>
-</ul>
+## What is this talk about?
+![alt text](../assets/scatterplot_intro.png "console")<!-- .element: style="max-width:50%;max-height:50%" -->
+Note:
+* boring tasks have 2 criteria: frequency and tediousness
+* ...
+* Before I go over some examples, first a commercial break :)
 
 
 <!-- .slide: data-background-image="../assets/emakina.png" data-background-size="contain" class="title-top-align"-->

@@ -1,6 +1,9 @@
 # Timesheeting
 Note:
 * By show of hands, who likes filling out timesheets? who hates it? Welcome to the dark side :)
+* Paint a picture:
+  * Annoying
+  * very tedious 
 
 
 ## Fusion
