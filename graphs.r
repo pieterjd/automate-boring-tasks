@@ -20,10 +20,10 @@ frequency<- c(4,9,4,10,1)
 data <-data.frame(names, frequency, tediousness)
 data$annoyance<-data$frequency + data$tediousness
 
-
-p<-ggplot(data, aes(x=frequency,y=tediousness)) +
-   geom_point(aes(color=annoyance), size=6) +
-   geom_text(aes(label=names),hjust="inward",vjust=2,colour=grey3) +
+#showPoints: if TRUE, then the points are plotted with their corresponding labels
+# outFile: the path where to save the generated graph
+get_graph<-function(showPoints,outFile){
+ p<-ggplot(data, aes(x=frequency,y=tediousness)) +
    #color labels and breaks (put in the legend)
    scale_colour_gradient(low=chartreuse, high=tangerine,breaks=c(min(data$annoyance), max(data$annoyance)),labels = c("Low", "High")) + # color coding of points
    # Axis labels and legend label
@@ -32,13 +32,16 @@ p<-ggplot(data, aes(x=frequency,y=tediousness)) +
    scale_x_continuous(lim=c(0,max(data$frequency)+1), breaks=c(0, max(data$frequency)+1), labels=c('Low', 'High')) +
    # same as for x-axis :)
    scale_y_continuous(lim=c(0,max(data$tediousness)+1), breaks=c(0, max(data$tediousness)+1), labels=c('Low', 'High'))
+ if(showPoints){
+  p<-p+geom_point(aes(color=annoyance), size=6)+
+  geom_text(aes(label=names),hjust="inward",vjust=2,colour=grey3)
+ }
+ # label sizes
+ titleSize<-18
+ labelSize<-14
 
-# label sizes
-titleSize<-18
-labelSize<-14
-
-p<-p+theme(
-text=element_text(size=16),
+ p<-p+theme(
+  text=element_text(size=16),
   # set colour to NA otherwise you have a small white border - ANNOYING!
   plot.background=element_rect(fill=black,colour=NA),
   legend.background=element_rect(fill=black),
@@ -54,13 +57,19 @@ text=element_text(size=16),
   ,axis.title.x = element_text( color=grey3)
   ,axis.title.y = element_text( color=grey3)
   #,plot.margin=grid::unit(c(0,0,0,0), "mm")
-  )
+)
 
-# add rectangles to highlight the interesting areas
-p<-p +
+ # add rectangles to highlight the interesting areas
+ p<-p +
   # horizontal bar
   annotate("rect",xmin=0,xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0.8*(max(data$tediousness)+1),alpha=0.2,fill=tangerine)+
   # vertical bar
   annotate("rect",xmin=(1-0.2)*(max(data$frequency)+1),xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0,alpha=0.2,fill=tangerine)
-p
-ggsave("./assets/scatterplot.png", p)
+
+ ggsave(outFile, p)
+}
+
+# Generate graph with points
+get_graph(TRUE,"./assets/scatterplot.png")
+# Generate graph without points - used in introduction
+get_graph(FALSE,"./assets/scatterplot_intro.png")
