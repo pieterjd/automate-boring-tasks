@@ -19,6 +19,7 @@ Note:
 ![alt text](../assets/scatterplot_intro.png "console")<!-- .element: style="max-width:50%;max-height:50%" -->
 Note:
 * boring tasks have 2 criteria: frequency and tediousness
+* extremes: on-offs (lower left)  - very frequent and annoying tasks (top right)
 * ...
 * Before I go over some examples, first a commercial break :)
 
