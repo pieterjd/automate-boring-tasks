@@ -33,45 +33,8 @@ Note:
 ![Example deploy message](../assets/deploy_message.png "Example deploy message")
 
 
-## Environment Clean up
-![Example deploy message](../assets/intellij-branches-zoom.png "Example deploy message")<!-- .element height="70%" width="70%" -->
-
-
-### list branches
-```Powershell
-function delete_branches_with_prefix($prefix){
-$branches = git branch --list "$prefix*"|%{$_.trim()}
-git checkout develop
-$branches |%{
- write-host "cleaning $_"
- git branch -d $_
-}
-
-function isGitRepo($dir){
- $gitPath = Join-Path -Path $dir -ChildPath ".git"
- return Test-Path -Path $gitPath
-}
-```
-
-
-### Delete branches
-```powershell
-if(isGitRepo((Get-Location).path)){
- delete_branches_with_prefix('bugfix')
- delete_branches_with_prefix('buildfix')
- delete_branches_with_prefix('maintenance')
- delete_branches_with_prefix('feature')
- delete_branches_with_prefix('improvement')
-}
-else{
- write-host -ForegroundColor Red "No git repo detected"
-}
-```
-
-
 ## What I've learned & saved
 * Brushed up on Git command & Powershell
-* Jira QL
 * ``pbcopy``
 
 * Lot's of time & frustration <!-- .element: class="fragment" data-fragment-index="1"  -->
