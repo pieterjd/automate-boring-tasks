@@ -38,24 +38,30 @@ Note:
 * you would think this would be ok for each environment
 
 
-## Scripting - SQL
-```sql[|1-7|9-14]
-SELECT distinct uc.credential as c,
-CONCAT("insert into `user` ( email, password,
-is_active, created_at, updated_at)
-values('",  credential, "@emakina.com', sha1('pass'),
-1, now(), now());")
-as command
-from user_credential uc
-UNION
-SELECT distinct uc.credential as c,
-CONCAT("insert into user_credential (user_id, credential,
-value, created_at, updated_at)
-values (LAST_INSERT_ID(), '",  credential,"', 1, now(), now());")
-as command
-from user_credential uc
-order by c;
+## Powershell Output
+```sql
+insert into `user`
+(email, password, is_active, created_at, updated_at)
+values('admin@emakina.com', sha1('pass'), 1, now(), now() );
+
+insert into user_credential
+(user_id,credential,value,created_at,updated_at)
+values (LAST_INSERT_ID(),'admin',1,now(),now());
+
+-- all other statements
+
+insert into `user`
+(email, password, is_active, created_at, updated_at)
+values('spot@emakina.com', sha1('pass'), 1, now(), now() );
+
+insert into user_credential
+(user_id,credential,value,created_at,updated_at)
+values (LAST_INSERT_ID(),'spot',1,now(),now());
 ```
+
+
+## SQL output
+![alt text](../assets/templating_sql_output.png "SQL templating output")
 Note:
 * Off course - each environment has it specific set of roles
 * generate same sql statements, but this time using sql itself
@@ -65,10 +71,11 @@ Note:
 
 ## AEM - component
 ```bash
-.content.xml
-byline.html
-_cq_dialog:
-           .content.xml
+byline
+|-- byline.html
+|-- .content.xml
+`-- _cq_dialog
+    `-- .content.xml
 ```
 Note:
 * Previous examples are one-offs; this one is a recurring issue
@@ -153,3 +160,5 @@ Note:
 * First experience with node.js
 
 * Lot's of time & frustration <!-- .element: class="fragment" data-fragment-index="1"  -->
+Note:
+* sql functions: CONCAT, GROUP_CONCAT, LAST_INSERT_ID
