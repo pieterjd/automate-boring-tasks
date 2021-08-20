@@ -25,7 +25,8 @@ data$annoyance<-data$frequency + data$tediousness
 get_graph<-function(showPoints,outFile){
  p<-ggplot(data, aes(x=frequency,y=tediousness)) +
    #color labels and breaks (put in the legend)
-   scale_colour_gradient(low=chartreuse, high=tangerine,breaks=c(min(data$annoyance), max(data$annoyance)),labels = c("Low", "High")) + # color coding of points
+   # no coloring after all, it's duplicate information
+   # scale_colour_gradient(low=chartreuse, high=tangerine,breaks=c(min(data$annoyance), max(data$annoyance)),labels = c("Low", "High")) + # color coding of points
    # Axis labels and legend label
    xlab('Frequency') + ylab('Tediousness') +  labs(color="Annoyance") +
    # lim is the range of the x-axis, breaks defines which ticks to display, and labels are the labels of the ticks
@@ -33,8 +34,8 @@ get_graph<-function(showPoints,outFile){
    # same as for x-axis :)
    scale_y_continuous(lim=c(0,max(data$tediousness)+1), breaks=c(0, max(data$tediousness)+1), labels=c('Low', 'High'))
  if(showPoints){
-  p<-p+geom_point(aes(color=annoyance), size=6)+
-  geom_text(aes(label=names),hjust="inward",vjust=2,colour=grey3)
+  p<-p+geom_point(size=6, color=azure,alpha=1)+
+  geom_text(aes(label=names),hjust="inward",vjust=2,colour=azure)
  }
  # label sizes
  titleSize<-18
@@ -54,17 +55,17 @@ get_graph<-function(showPoints,outFile){
   ,legend.text=element_text(color=grey3)
   ,legend.title=element_text(color=grey3)
 
-  ,axis.title.x = element_text( color=grey3)
-  ,axis.title.y = element_text( color=grey3)
+  ,axis.title.x = element_text( color=grey3, face='bold')
+  ,axis.title.y = element_text( color=grey3, face='bold')
   #,plot.margin=grid::unit(c(0,0,0,0), "mm")
 )
 
  # add rectangles to highlight the interesting areas
  p<-p +
   # horizontal bar
-  annotate("rect",xmin=0,xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0.8*(max(data$tediousness)+1),alpha=0.2,fill=tangerine)+
+  annotate("rect",xmin=0,xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0.8*(max(data$tediousness)+1),alpha=0.4,fill=tangerine)+
   # vertical bar
-  annotate("rect",xmin=(1-0.2)*(max(data$frequency)+1),xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0,alpha=0.2,fill=tangerine)
+  annotate("rect",xmin=(1-0.2)*(max(data$frequency)+1),xmax=max(data$frequency)+1,ymax=max(data$tediousness)+1,ymin=0,alpha=0.4,fill=tangerine)
 
  ggsave(outFile, p)
 }
