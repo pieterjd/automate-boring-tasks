@@ -15,7 +15,7 @@ Note:
 * Not an usual developer talk, but I haven't read posts or seen talks before tackling this issue
 
 
-## What is this talk about?
+### What is this talk about?
 ![alt text](../assets/scatterplot_intro.png "console")<!-- .element: style="max-width:50%;max-height:50%" -->
 Note:
 * boring tasks have 2 criteria: frequency and tediousness

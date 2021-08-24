@@ -1,4 +1,6 @@
 # Conclusion
+
+
 ![alt text](../assets/scatterplot.png "console")<!-- .element: style="max-width:50%;max-height:50%" -->
 Note:
 * First: read a lot so you know what's new. No need to be spending hours to become an expert. Just enough to know what it is, what kind of problem it solves.
