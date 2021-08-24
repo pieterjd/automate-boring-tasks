@@ -1,12 +1,9 @@
-# Automate, Save & Learn
-#### Pieter-Jan Drouillon
-
-<i class="fab fa-chrome"></i> www.pieterjd.be
+<!-- .slide: data-background-image="../assets/devoxx.pl-titleslide.png" data-background-size="contain" class="title-top-align"-->
 
 Note:
 * Welcome to Automate Boring tasks, Save time and learn something new.
 * By show of hands: who still has to fill out timesheet for today?
-* My name is ....
+* <b>My name is ....</b>
   * academic backgrounds
   * shortlifed career in Supply Chain
   * Full-stack java/AEM developer at emakina.com
