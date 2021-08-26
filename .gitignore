@@ -9,7 +9,7 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-dist/*.map
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,intellij,eclipse
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,intellij,eclipse
 
@@ -272,7 +272,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+
 
 # Gatsby files
 .cache/
